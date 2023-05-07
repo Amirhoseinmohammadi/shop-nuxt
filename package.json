@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "nuxt": "^3.3.1",
+    "nuxt-icon": "^0.3.3",
+    "pinia": "^2.0.33"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.33.1",
+    "@pinia/nuxt": "^0.4.7",
+    "@supabase/supabase-js": "^2.21.0",
+    "aos": "^2.3.4",
+    "daisyui": "^2.51.4",
+    "nuxt-swiper": "^1.0.1",
+    "swiper": "^9.1.1",
+    "vue-awesome-swiper": "^5.0.1"
+  }
+}
