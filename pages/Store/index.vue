@@ -2,6 +2,16 @@
     
       
     <div>
+      <Html>
+        <Head>
+          <Title>Products</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
       <div class="">
         
         <section class="   " >

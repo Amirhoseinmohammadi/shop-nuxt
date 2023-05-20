@@ -1,5 +1,16 @@
 <template>
     <div>
+        <Html>
+        <Head>
+          <Title> Product | {{product?.title  }}</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
+     
         
      <div class=" flex    flex-col justify-center items-center gap-4 bg-secondary md:w-1/2  md:mx-auto mx-2  p-2 my-3 shadow-md">
 
@@ -29,6 +40,7 @@
 
 <script setup lang="ts">
 import {useShoppingStore} from'@/store/products';
+import { useMeta } from '@nuxtjs/composition-api';
 const route = useRoute();
 const useCard = useShoppingStore();
 const current = route.params.title

@@ -1,6 +1,16 @@
 <template>
  
   <div class="p-5 ">
+    <Html>
+        <Head>
+          <Title>About Us</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
     <section class="overflow-hidden pt-20 pb-12  px-10 lg:pt-[120px] lg:pb-[90px]">
   <div class="container mx-auto">
     <div class="-mx-4 flex flex-wrap items-center justify-between">

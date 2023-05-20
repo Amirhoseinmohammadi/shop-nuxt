@@ -1,5 +1,15 @@
 <template> 
 <div > 
+  <Html>
+        <Head>
+          <Title>Favorite</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
   
     <div v-if="useCard.getCartFavorites.length"  class=" flex flex-wrap justify-center gap-4 my-10  ">
        

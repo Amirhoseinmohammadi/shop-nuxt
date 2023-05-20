@@ -1,5 +1,15 @@
 <template>
     <div>
+      <Html>
+        <Head>
+          <Title>Box</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
       
    
 

@@ -1,5 +1,15 @@
 <template>
   <div class="flex justify-center">
+    <Html>
+        <Head>
+          <Title>Login</Title>
+          <Meta name="description" content="My page is cool"/>
+        
+          
+
+        </Head>
+
+      </Html>
 
   
 <div
