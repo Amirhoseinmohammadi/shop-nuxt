@@ -24,14 +24,14 @@
   </div>
   <div class="w-full xl:w-1/2 p-8">
     <form method="post" action="#" onSubmit="return false">
-      <h1 class=" text-2xl font-bold">Sign in to your account</h1>
-      <div>
+      <h1 class=" text-2xl font-bold">{{ authState }} </h1>
+      <div >
         <span class=" text-sm">
-          Don't have an account?
+         {{ authState ==="Sign in" ? " Don't have an account?" :"Already have a account please sin in " }}
         </span>
-        <span class=" text-sm font-semibold">
-          Sign up
-        </span>
+        <button @click="ToggleauthState"  class=" text-sm font-semibold">
+         {{ authState ==="Sign in" ? "sign up" : "sign in" }}
+        </button>
       </div>
       <div class="mb-4 mt-6">
         <label
@@ -84,9 +84,14 @@
 </template>
 
 <script setup lang="ts">
+const authState = ref<"Sign in" | "Sign up">("Sign in");
+const ToggleauthState = () =>{
+  if(authState.value === "Sign in") authState.value = "Sign up"
+  else authState.value = "Sign in"
+};
 
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 </style>
