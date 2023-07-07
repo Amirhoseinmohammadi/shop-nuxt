@@ -4,22 +4,14 @@
         <Head>
           <Title>Box</Title>
           <Meta name="description" content="My page is cool"/>
-        
-          
-
         </Head>
-
       </Html>
-      
-   
-
 <section v-if="useCard.getCartItems.length" class="  ">
   <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-3xl">
       <header class="text-center">
         <h1 class="text-xl font-semibold uppercase sm:text-3xl text-white/75  ">Your Carts</h1>
       </header>
-
       <div class="mt-8 p-2">
         <div class="  space-y-6 bg-secondary p-6  rounded-md ">
           <div
@@ -33,33 +25,23 @@
               class=" md:h-36 md:w-36 rounded object-cover shadow-2xl"
             />
            </div>
-
             <div class="flex-1 ">
-            
               <p class=" md:text-[20px] text-sm   uppercase  font-semibold ">{{ item.title}}</p>
-
               <dl class="mt-0.5 space-y-px  font-semibold ">
-               
-
-                <div class=" text-sm">
+              <div class=" text-sm">
                   <dt class="inline   md:text-2xl  ">Price :</dt>
                   <dd class="inline md:text-xl"> <span class=" "> $</span>{{item.price}}</dd>
                 </div>
               </dl>
             </div>
-
 <div class="flex flex-col md:flex-row md:justify-center md:items-center ">
-
-    
-    <button
+ <button
     @click="useCard.incrementQ(item)"
       type="button"
       class="w-10 h-10 leading-10   btn-primary   btn  transition hover:opacity-75"
     >
       &plus;
     </button>
-
-
     <input
       disabled
       type="number"
@@ -67,8 +49,6 @@
       :value="item.quantity"
       class="  h-10 w-10 border-transparent bg-transparent text-center    [-moz-appearance:_textfield] sm:text-sm [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
     />
-
-
     <button
     @click="useCard.decrementQ(item)"
       type="button"
@@ -76,9 +56,6 @@
     >
       &minus;
     </button>
- 
-
-  
 </div>
 <div class="">
   <button 
@@ -104,7 +81,7 @@
 </div>
           </div>
 
-        
+      
         </div>
 
         <div class="mt-8 flex justify-center   bg-secondary rounded-md  p-8">
@@ -169,21 +146,22 @@
   </div>
 </section>
 
+
 <section v-else>
-
-  <div class="  md:flex-row flex-col flex  justify-center my-7  gap-6  items-center   w-full h-[50vh] ">
-    
+  <!-- Container for empty state message and button -->
+  <div class="md:flex-row flex-col flex justify-center my-7 gap-6 items-center w-full h-[50vh]">
     <div>
-      <h1 class=" text-xl text-white/75 font-semibold">Your Box is empty</h1>
-      <NuxtLink to="/Store" class="btn  btn-error  text-black text-lg my-9 "> Shop Now ...</NuxtLink>
-   </div>
+      <!-- Empty state message -->
+      <h1 class="text-xl text-white/75 font-semibold">Your Box is empty</h1>
+      <!-- Button to redirect to the store -->
+      <NuxtLink to="/Store" class="btn btn-error text-black text-lg my-9">Shop Now ...</NuxtLink>
+    </div>
 
-    <div class=" ">
+    <!-- Image container -->
+    <div class="">
       <img src="@/assets/image/SeekPng.com_card-suits-png_947514.png" alt="">
     </div>
-   
   </div>
-
 </section>
 
     </div>
@@ -191,7 +169,7 @@
 
 <script setup>
 
-import {useShoppingStore} from'@/store/products';
+import {useShoppingStore} from'~~/store/products';
 
 const useCard = useShoppingStore()
 

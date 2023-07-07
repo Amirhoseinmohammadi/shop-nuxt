@@ -4,12 +4,8 @@
         <Head>
           <Title>Login</Title>
           <Meta name="description" content="My page is cool"/>
-        
-          
-
         </Head>
-
-      </Html>
+   </Html>
 
   
 <div
@@ -62,7 +58,7 @@
         />
         <a
           class="inline-block align-baseline text-sm hover:text-info"
-          href="/forgot"
+          href="#"
         >
           Forgot Password?
         </a>
@@ -83,9 +79,10 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 const authState = ref<"Sign in" | "Sign up">("Sign in");
-const ToggleauthState = () =>{
+const ToggleauthState = () => {
   if(authState.value === "Sign in") authState.value = "Sign up"
   else authState.value = "Sign in"
 };

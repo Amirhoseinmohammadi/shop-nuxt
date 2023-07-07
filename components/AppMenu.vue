@@ -1,7 +1,4 @@
 <template>
-  
-
-
 <div class="flex flex-wrap place-items-center  ">
   <section class="relative mx-auto">
       <!-- navbar -->
@@ -50,7 +47,6 @@
               </svg>
           </NuxtLink>
           
-          
         </div>
       </div>
       <!-- Responsive navbar -->
@@ -97,8 +93,7 @@
 </template>
 
 <script setup>
-import {useShoppingStore} from'@/store/products';
-
+import {useShoppingStore} from'~~/store/products';
 const useCard = useShoppingStore()
 
 
